@@ -5,7 +5,6 @@ import Knowledges from "./pages/Knowledges";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
-import style from "./styles/styles.scss";
 
 const App = () => {
   return (

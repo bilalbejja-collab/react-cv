@@ -1,12 +1,14 @@
-import { StrictMode } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-
 import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import "./styles/styles.scss";
 
-const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <StrictMode>
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-  rootElement
+  </React.StrictMode>,
+  document.getElementById("root")
 );
+
+serviceWorker.unregister();
