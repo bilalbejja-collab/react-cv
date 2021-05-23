@@ -18,7 +18,7 @@ class Languages extends Component {
   };
 
   render() {
-    let { languages } = this.state;
+    let { languages, frameworks } = this.state;
     return (
       <div className="languagesFrameworks">
         <ProgressBar
@@ -26,7 +26,11 @@ class Languages extends Component {
           className="languageDisplay"
           title="languages"
         />
-        <ProgressBar />
+        <ProgressBar
+          languages={frameworks}
+          title="frameworks & bibliothèques"
+          className="frameworksDisplay"
+        />
       </div>
     );
   }
