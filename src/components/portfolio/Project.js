@@ -6,7 +6,9 @@ export default class Project extends Component {
   };
 
   handleInfo = () => {
-    showInfo: !this.state.showInfo;
+    this.setState({
+      showInfo: !this.state.showInfo
+    });
   };
 
   render() {
@@ -26,8 +28,8 @@ export default class Project extends Component {
         </span>
 
         {this.state.showInfo && (
-          <div className="showInfo">
-            <div className="infoContent">
+          <div className="showInfos">
+            <div className="infosContent">
               <div className="head">
                 <h2>{name}</h2>
                 <div className="sourceCode">
@@ -40,8 +42,8 @@ export default class Project extends Component {
                     Code source
                   </a>
                 </div>
-                <p className="text">{info}</p>
               </div>
+              <p className="text">{info}</p>
               <div className="button return" onClick={this.handleInfo}>
                 Retourner sur la page
               </div>
