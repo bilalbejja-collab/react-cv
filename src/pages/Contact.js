@@ -4,9 +4,10 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Contact = () => {
   return (
-    <div>
+    <div className="contact">
       <Navigation />
-      <div className="header">
+      <div className="contactContent">
+        <div className="header"></div>
         <div className="contactBox">
           <h1>Contactez-moi</h1>
           <ul>
@@ -14,7 +15,6 @@ const Contact = () => {
               <i className="fas fa-map-marker-alt"></i>
               <span>Almería</span>
             </li>
-
             <li>
               <i className="fas fa-mobile-alt"></i>
               <CopyToClipboard text="632332217">
